@@ -1000,7 +1000,7 @@ iframe{
 
     .btn{
         display: inline-block;
-        margin: 1rem auto auto 37%; 
+        margin: 1rem auto auto 33%; 
         padding: .7rem 3rem;
         border-radius: 5rem;
         background: var(--red);
@@ -1011,7 +1011,7 @@ iframe{
 
     .btn-sec{
         display: inline-block;
-        margin: 1rem auto auto 37%;
+        margin: 1rem auto auto 34%;
         padding: .7rem 3rem;
         border-radius: 5rem;
         background: var(--red);
@@ -1226,6 +1226,12 @@ iframe{
 
     .testimonial-col div h3{
         text-align: center;
+    }
+
+    /* SPONSORS */
+
+    .sponsors .box-container .box{
+        flex-basis: 33em;
     }
 
     /* CONTACT */
