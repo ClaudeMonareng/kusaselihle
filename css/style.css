@@ -78,20 +78,14 @@ section{
 }
 
 .background2{
-    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.3)), url(../images/playground.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.3)), url(../images/classroom2.jpg);
     background-size: cover;
     background-position: bottom;
 }
 
-.button-parent{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .btn{
     display: inline-block;
-    /* margin: 1rem auto auto 40%;  */
+    margin: 1rem auto auto auto; 
     padding: .7rem 3rem;
     border-radius: 5rem;
     background: var(--red);
@@ -101,10 +95,6 @@ section{
 }
 
 .btn:hover{
-    background: #600a68;
-}
-
-.btn-sec:hover{
     background: #600a68;
 }
 
@@ -127,6 +117,28 @@ section{
 .up-and-down::after{
     background: url(../images/img-down.png) no-repeat;
     top: -6rem;
+}
+
+/* CURVES SHAPES */
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 158px;
+}
+
+.wave .shape-fill {
+    fill: #FFFFFF;
 }
 
 .heading{
@@ -155,10 +167,10 @@ header.sticky{
     box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
 }
 
-header .logo {
+/* header .logo {
     display: flex;
     align-items: center;
-}
+} */
 
 header a img{
     width: 4em;
@@ -171,7 +183,7 @@ header a img{
 
 header a h3{
     font-size: 2em;
-    padding: 1em 0 0 10px;
+    /* padding: 1em 0 0 10px; */
     color: antiquewhite;
     font-weight: 600;
 }
@@ -245,6 +257,11 @@ header .navbar a:hover{
 }
 
 /* FEATURES SECTION */
+
+.features{
+    position: fixed;
+    margin-bottom: 4em;
+}
 
 .features .box-container{
     display: flex;
@@ -535,7 +552,6 @@ header .navbar a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 1s ease-in-out;
 } 
 
 .services .box-container .box .info h3{
@@ -543,6 +559,7 @@ header .navbar a:hover{
     color: #fff;
     transform: translateY(5rem);
     opacity: 0;
+    transition: 1s;
 }
 
 .services .box-container .box:hover .info{
@@ -1030,7 +1047,7 @@ iframe{
         justify-content: space-between;
         min-height: 5em;
     }
-
+/* 
     header .logo img{
         margin-bottom: 1rem;
         text-align: center;
@@ -1042,7 +1059,7 @@ iframe{
         padding: 1em 1rem;
         color: antiquewhite;
         font-weight: 600;
-    }
+    } */
 
     .background2{
         background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.3)), url(../images/classroom2.jpg);
