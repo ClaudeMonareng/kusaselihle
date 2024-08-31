@@ -83,20 +83,15 @@ section{
     background-position: bottom;
 }
 
-.btn{
-    display: inline-block;
-    margin: 1rem auto auto 40%; 
-    padding: .7rem 3rem;
-    border-radius: 5rem;
-    background: var(--red);
-    color: #fff;
-    font-size: 2rem;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+.button-parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.btn-sec{
+.btn{
     display: inline-block;
-    margin: 1rem auto auto 35%;
+    /* margin: 1rem auto auto 40%;  */
     padding: .7rem 3rem;
     border-radius: 5rem;
     background: var(--red);
@@ -998,7 +993,7 @@ iframe{
 
 @media(max-width: 730px){
 
-    .btn{
+    /* .btn{
         display: inline-block;
         margin: 1rem auto auto 33%; 
         padding: .7rem 3rem;
@@ -1007,7 +1002,7 @@ iframe{
         color: #fff;
         font-size: 2rem;
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
-    }
+    } */
 
     .btn-sec{
         display: inline-block;
