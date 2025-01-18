@@ -138,6 +138,7 @@ section{
     color: var(--blue);
     padding: 1rem;
     font-size: 3.5rem;
+    margin: 2rem auto;
 }
 
 header{
@@ -230,7 +231,7 @@ header .navbar a:hover{
     align-items: center;
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    max-height: 100vh;
     justify-content: center;
     flex-direction: column;
     background: #2696E9;
@@ -239,9 +240,14 @@ header .navbar a:hover{
 .home .content{
     border-radius: 10px;
     background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5));
-    padding: 5em;
+    padding: 2rem;
     justify-content: center;
-    line-height:normal;
+    line-height: 5rem;
+}
+
+.first{
+    height: 20rem;
+    margin-top: 10rem;
 }
 
 #btn{
@@ -250,13 +256,14 @@ header .navbar a:hover{
     color: #fff;
     font-size: 12px;
     border-radius: 12px;
+    line-height: 50%;
 }
 
 .home .content h1{
     text-align: center;
     font-size: 4rem;
     color: #fff;   
-    padding: 1em;
+    padding: 1rem;
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -265,7 +272,7 @@ header .navbar a:hover{
 
 .home .content h1 span{
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 6rem;
     font-weight: 600;
     overflow-wrap: break-word;
     background: linear-gradient(to top, transparent 0%, yellow 40%);
@@ -273,6 +280,7 @@ header .navbar a:hover{
     -webkit-text-fill-color: transparent;
     text-align: center;
     opacity: 1;
+    line-height: 6rem;
 }
 
 .home .content h3{
@@ -383,21 +391,11 @@ header .navbar a:hover{
 
 /* FEATURES SECTION */
 
-.features{
-    /* position: fixed; */
-    margin-bottom: 4em;
-}
-
 .features .box-container{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-.features h3{
-    color:#3635a8;
-    font-size: 3em;
 }
 
 .features .box-container .box{
@@ -439,33 +437,9 @@ header .navbar a:hover{
     color: var(--blue);
 }
 
-.featuers .box-container .box p{
-    font-size: 2rem;
-}
-
-.features .box-container .box .share{
-    padding: 1rem 0;
-}
-
-.features .box-container .box .share a{
-    height: 4.5rem;
-    width: 4.5rem;
-    line-height: 4.5rem;
-    border-radius: 50%;
-    border: 0.1rem solid #333;
-    font-size: 1.7rem;
-    margin: 0.2rem;
-}
-
-.features .box-container .box .share a:hover{
-    background: var(--blue);
-    color: #fff;
-    border-color: var(--blue);
-}
-
 .features .box-container .box p{
     color: #666;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
 }
 
 /* ABOUT SECTION */
@@ -727,9 +701,13 @@ header .navbar a:hover{
 .teacher .box-container .box:hover{
     transform: scale(1.015);
     overflow-y: scroll;
-    scrollbar-width: thin;
-    scrollbar-color: blue yellow;
+    scrollbar-width: none;
     cursor: pointer;
+}
+
+.teacher .box-container .box:last-child{
+    height: 100%;
+    font-size: 2rem;
 }
 
 .teacher .box-container .box img{
@@ -746,32 +724,8 @@ header .navbar a:hover{
 }
 
 .teacher .box-container .box span{
-    font-size: 1.7rem;
-    color: var(--red);
-}
-
-.teacher .box-container .box p{
     font-size: 2rem;
-}
-
-.teacher .box-container .box .share{
-    padding: 1rem 0;
-}
-
-.teacher .box-container .box .share a{
-    height: 4.5rem;
-    width: 4.5rem;
-    line-height: 4.5rem;
-    border-radius: 50%;
-    border: 0.1rem solid #333;
-    font-size: 1.7rem;
-    margin: 0.2rem;
-}
-
-.teacher .box-container .box .share a:hover{
-    background: var(--blue);
-    color: #fff;
-    border-color: var(--blue);
+    color: var(--red);
 }
 
 .teacher .box-container .box p{
@@ -806,8 +760,7 @@ header .navbar a:hover{
 .testimonials .box-container .box:hover{
     transform: scale(1.015);
     overflow-y: scroll;
-    scrollbar-width: thin;
-    scrollbar-color: blue yellow;
+    /* scrollbar-width? */
 }
 
 .testimonials .box-container .box .row{
@@ -834,7 +787,7 @@ header .navbar a:hover{
 
 .testimonials .box-container .box p{
     font-size: 2rem;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .testimonials .box-container .box .share{
@@ -873,6 +826,7 @@ header .navbar a:hover{
     text-align: center;
     margin: 2em;
     color: #666;
+    line-height: 3rem;
 }
 
 .sponsors .box-container{
@@ -916,11 +870,15 @@ header .navbar a:hover{
     color:#fff;
     transition: 1s;
 } 
+
 .sponsors .box-container .box .info ul li{
     font-size: 2rem;
     color: #fff;
     opacity: 1;
+    list-style-type: none;
+    margin-bottom: 1rem;
 }
+
 .sponsors .box-container .box:hover .info{
     top: 0%;
 }
@@ -964,15 +922,22 @@ header .navbar a:hover{
 }
 
 .contact .row .contact-info .box p{
-    font-size: 1.7rem;
+    font-size: 2rem;
     padding: .5rem 0;
     color: #666;
     text-transform: none;
+    text-align: center;
 }
 
-.contact .row .contact-info .box p i{
-    padding-right: .5rem;
-    color: var(--blue);
+#contact-details-box{
+    text-align: center;
+}
+
+.contact .row .contact-info .box i{
+    font-size: 2rem;
+    padding: .5rem 0;
+    color: blue;
+    text-align: center;
 }
 
 .contact .row .contact-info .box a{
@@ -983,7 +948,10 @@ header .navbar a:hover{
     border: .1rem solid #333;                            
     color: #333;
     font-size: 1.7rem;
-    margin: .2rem;
+    margin: auto 1rem;
+}
+
+#follow-us-box{
     text-align: center;
 }
 
@@ -1020,7 +988,6 @@ iframe{
     top: -8rem;
     left: 50%;
     transform: translateX(-50%);
-    /* background: url(../images/img-top.png) no-repeat; */
     background-size: cover;
     height: 8rem;
     width: 100%;
@@ -1128,6 +1095,12 @@ iframe{
         text-align: center;
     }
 
+    /* TEACHER */
+
+    .teacher .box-container .box:last-child{
+        height: 68vh;
+    }
+
     /* CONTACT */
 
     .contact .row{
@@ -1174,7 +1147,7 @@ iframe{
 
     header .navigation.active .navigation-items{ 
         background: #fff;
-        width: 600px;
+        width: 90%;
         height: 90%;
         max-width: 600px;
         margin: 20px;
@@ -1218,8 +1191,13 @@ iframe{
         margin-top: 50px;
         display: none;
     }
-}
 
+    /* TEACHER */
+
+    .teacher .box-container .box:last-child{
+        height: 68vh;
+    }
+}
 
 @media(max-width: 730px){
 
@@ -1237,12 +1215,13 @@ iframe{
     }
     
     #btn{
-        padding: 2px 20px;
+        padding: 10px 20px;
         margin-top: 3em;
         background: #600a68;
         color: #fff;
         font-size: 12px;
         border-radius: 12px;
+        transform: translateY(-6rem);
     }
 
     header{
@@ -1287,23 +1266,27 @@ iframe{
     .home .content{
         border-radius: 10px;
         background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5));
-        padding: 5em;
-        height: 65%;
-        min-width: 100%;
+        padding: 2rem;
         justify-content: center;
-        line-height: 6.5rem;
+        line-height: normal;
+        height: 35rem;
         z-index: 888;
-        color: #fff;
-        margin-top: 50px;
-        display: none;
+    }
+    
+    .first{
+        height: 10rem;
+    }
+
+    .slider-navigation{
+        transform: translateY(-4rem);
     }
 
     .home .content h1{
         text-align: center;
-        font-size: 4rem;
+        font-size: 3rem;
         color: #fff;   
         min-width: 100%;
-        padding-top: 2em;
+        padding-top: 1rem;
         font-weight: 900;
         text-transform: uppercase;
         letter-spacing: 5px;
@@ -1312,8 +1295,9 @@ iframe{
 
     .home .content h1 span{
         text-transform: uppercase;
-        font-size: 1.5em;
+        font-size: 4rem;
         font-weight: 600;
+        line-height: 4rem;
         width: 90%;
         padding: auto 90%;
         background: linear-gradient(to top, transparent 0%, yellow 40%);
@@ -1324,16 +1308,11 @@ iframe{
     }
 
     .home .content h3{
-        font-size: 3rem;
+        font-size: 2rem;
         color: #ffffff;
         text-align: center;
         line-height: normal;
-    }
-
-    .home .content p{
-        font-size: 1.7rem;
-        color: #666;
-        padding: 1rem 0;
+        transform:translateY(-4rem);
     }
 
     .home:before{
@@ -1399,6 +1378,16 @@ iframe{
         margin-top: 5em;
     }
 
+    .features .box-container .box{
+        min-width: 100%;
+        height: 34rem;
+    }
+
+    .features .box-container .box .info p{
+        font-size: 2rem;
+        text-align: center;
+    }
+
     /* ABOUT */
 
     .about {
@@ -1419,7 +1408,8 @@ iframe{
         font-weight: 600;
     }
     .about .content p{
-        line-height: 1.5em;
+        font-size: 2rem;
+        line-height: 3rem;
         text-align: center;
     }
 
@@ -1442,45 +1432,19 @@ iframe{
         overflow-y: scroll;
     }
 
+    .teacher .box-container .box:last-child{
+        height: 68vh;
+    }
+
     .teacher .box-container .box p{
         margin-top: 1em;
-        font-size: 1.5em;
+        font-size: 2rem;
     }
 
     /* TESTIMONIAL */
 
-    .testimonials-row {
-        margin: 5% 0;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .testimonial-col {
-        display: flex;
-        flex-direction: column;
-        margin: 5% 0;
-        background: rgba(67, 91, 187, 0.1);
-        padding: 25px;
-        cursor: pointer;
-        min-height: 100%;
-        min-width: 100%;
-    }
-
-    .testimonial-col img {
-        margin: auto .4%;
-        min-width: 100%;
-        height: 20em;
-        border-radius: 5px;
-    }
-
-    .testimonial-col div p{
-        margin: 3% 0;
-        text-align: center;
-        font-size: 1em;
-    }
-
-    .testimonial-col div h3{
-        text-align: center;
+    .testimonials .box-container .box .row .info p{
+        font-size: 1.7rem;
     }
 
     /* SPONSORS */
@@ -1508,5 +1472,20 @@ iframe{
         width: 91vw;
         height: 30vh;
         margin-left: 0;
+    }
+}
+
+@media(max-width: 400px){
+    #btn{
+        transform: translateY(-8rem);
+    }
+
+    .home .content h1 span{
+        font-size: 80%;
+    }
+
+    .features .box-container .box{
+        min-width: 100%;
+        height: 34rem;
     }
 }
