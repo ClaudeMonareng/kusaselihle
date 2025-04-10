@@ -141,6 +141,14 @@ section{
     margin: 2rem auto;
 }
 
+.contact-heading{
+    text-align: center;
+    color: var(--blue);
+    padding: .5rem;
+    font-size: 3.5rem;
+    margin: 1rem auto;
+}
+
 header{
     position: fixed;
     display: flex;
@@ -430,6 +438,7 @@ header .navbar a:hover{
 .features .box-container .box h3{
     font-size: 2.5rem;
     color: #3635a8;
+    margin-bottom: 1rem;
 }
 
 .features .box-container .box span{
@@ -685,8 +694,7 @@ header .navbar a:hover{
     flex: 1 1 27rem;
     padding: 2rem 3rem;
     margin: 1rem;
-    height: 68vh;
-    max-height: 100%;
+    max-height: 40rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     border: .1rem solid rgba(0, 0, 0, .3);
     border-radius: 1rem;
@@ -760,7 +768,7 @@ header .navbar a:hover{
 .testimonials .box-container .box:hover{
     transform: scale(1.015);
     overflow-y: scroll;
-    /* scrollbar-width? */
+    scrollbar-width: none;
 }
 
 .testimonials .box-container .box .row{
@@ -940,17 +948,6 @@ header .navbar a:hover{
     text-align: center;
 }
 
-.contact .row .contact-info .box a{
-    height: 4.5rem;
-    width: 4.5rem;
-    line-height: 4.5rem;
-    border-radius: 50%;
-    border: .1rem solid #333;                            
-    color: #333;
-    font-size: 1.7rem;
-    margin: auto 1rem;
-}
-
 #follow-us-box{
     text-align: center;
 }
@@ -995,6 +992,31 @@ iframe{
 
 /* MEDIA QUERIES */
 
+@media(max-width: 1318px){
+    .home .content{
+        border-radius: 10px;
+        background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5));
+        padding: 5em;
+        height: 65%;
+        min-width: 100%;
+        justify-content: center;
+        line-height: 3rem;
+        z-index: 888;
+        color: #fff;
+        margin-top: 50px;
+        display: none;
+    }
+
+    .home .content h1,
+    .home .content h1 span{
+        font-size: 5rem;
+    }
+
+    .slider-navigation{
+        transform: translateY(-3rem);
+    }
+}
+
 @media(max-width: 1200px){
 
     header .navbar{
@@ -1025,6 +1047,41 @@ iframe{
         padding: 1rem 5%;
         height: 10rem;
     }
+
+    /* HOME */
+
+    .home .content{
+        border-radius: 10px;
+        background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5));
+        padding: 2rem;
+        justify-content: center;
+        line-height: normal;
+        height: 35rem;
+        z-index: 888;
+    }
+
+    .home .content{
+        border-radius: 10px;
+        background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5));
+        padding: 5em;
+        height: 65%;
+        min-width: 100%;
+        justify-content: center;
+        line-height: 3rem;
+        z-index: 888;
+        color: #fff;
+        margin-top: 50px;
+        display: none;
+    }
+
+    .home .content h1,
+    .home .content h1 span{
+        font-size: 4rem;
+    }
+
+    .slider-navigation{
+        transform: translateY(-3rem);
+    }
     
     /* ABOUT */
 
@@ -1046,54 +1103,6 @@ iframe{
         height: 40rem;
     }
 
-    /* TESTIMONIALS */
- 
-    .testimonials-row {
-        margin-top: 5%;
-        display: flex;
-        text-align: center;
-        justify-content: space-between;
-    }
-
-    .testimonial-col {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 15px;
-        border-radius: 10px;
-        overflow-y: hidden;
-        text-align: left;
-        background: rgba(67, 91, 187, 0.1);
-        background-size: cover;
-        background-position: center;
-        cursor: pointer;
-        min-height: 100%;
-    }
-
-    .testimonial-col:hover{
-        overflow-y: scroll;
-    }
-
-    .testimonial-col img {
-        width: 15em;
-        height: 120px;
-        margin-left: 1em;
-        border-radius: 100%;
-    }
-
-    #second-image{
-        width: 10em;
-    }
-
-    .testimonial-col div p{
-        padding-top: 5%;
-        align-items:center;
-        text-align: center;
-        font-size: 1em;
-    }
-
-    .testimonial-col div h3{
-        text-align: center;
-    }
 
     /* TEACHER */
 
@@ -1142,12 +1151,12 @@ iframe{
 
     header .navigation .navigation-items a:before{
         background: #222;
-        height: 5px;
+        height: 2px;
     }
 
     header .navigation.active .navigation-items{ 
         background: #fff;
-        width: 90%;
+        width: 600px;
         height: 90%;
         max-width: 600px;
         margin: 20px;
@@ -1157,6 +1166,13 @@ iframe{
         align-items: center;
         border-radius: 5px;
         box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+        overflow-y: hidden;
+    }
+
+    header .navigation.active .navigation-items:hover{
+        overflow-y: scroll;
+        scrollbar-width: thin;
+        scrollbar-color: blue;
     }
 
     .menu-btn{
@@ -1185,11 +1201,20 @@ iframe{
         height: 65%;
         min-width: 100%;
         justify-content: center;
-        line-height: 6.5rem;
+        line-height: 3rem;
         z-index: 888;
         color: #fff;
         margin-top: 50px;
         display: none;
+    }
+
+    .home .content h1,
+    .home .content h1 span{
+        font-size: 4rem;
+    }
+
+    .slider-navigation{
+        transform: translateY(-3rem);
     }
 
     /* TEACHER */
