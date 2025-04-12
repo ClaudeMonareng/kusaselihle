@@ -892,14 +892,6 @@ header .navbar a:hover{
     gap: 2em;
 }
 
-.contact-heading{
-    text-align: center;
-    color: blue;
-    padding: .5rem;
-    font-size: 3.5rem;
-    margin: 1rem auto;
-}
-
 .contact .row{
     display: flex;
     align-items: flex-end;
@@ -915,6 +907,14 @@ header .navbar a:hover{
 
 .contact .row .contact-info .box{
     padding: 1rem 0;
+}
+
+.contact-heading{
+    text-align: center;
+    color: blue;
+    padding: .5rem;
+    font-size: 3.5rem;
+    margin: 1rem auto;
 }
 
 .contact .row .contact-info .box p{
@@ -933,6 +933,18 @@ header .navbar a:hover{
     font-size: 2rem;
     padding: .5rem 0;
     color: blue;
+    text-align: center;
+}
+
+.contact .row .contact-info .box a{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 50%;
+    border: .1rem solid #333;                                                                               
+    color: #333;
+    font-size: 1.7rem;
+    margin: .2rem;
     text-align: center;
 }
 
