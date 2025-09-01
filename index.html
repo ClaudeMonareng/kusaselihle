@@ -3,76 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="icon" type="image/x-icon" href="/images/kusaselihle.png">
+    <link rel="icon" type="image/x-icon" href="./images/siphosethu.png">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>Kusaselihle | Official Website</title>
+    <title>KUSASELIHLE | Official Website</title>
 </head>
 <body>
+    <!-- HEADER -->
     <header>
-        <div class="logo-section">
-            <a href="index.html"><img src="images/kusaselihle.png"></a>
-            <a href="index.html"><h3>KUSASELIHLE</h3></a>
-        </div>
-        <div class="menu-btn"></div>
-        <div class="navigation">
-            <div class="navigation-items">
-                <a href="index.html" onclick="toggleMenu()">Home</a>
-                <a href="#about" onclick="toggleMenu()">About</a>
-                <a href="#teacher" onclick="toggleMenu()">Teachers</a>
-                <a href="#services" onclick="toggleMenu()">Services</a>
-                <a href="#testimonials" onclick="toggleMenu()">Testimonies</a>
-                <a href="#sponsors" onclick="toggleMenu()">Sponsors</a>
-                <a href="#contact" onclick="toggleMenu()">Contact</a>
+        <nav class="nav-bar">
+            <a href="index.html" class="logo"><h3 style="color: rgb(236, 228, 208);">KUSASELIHLE<span><br>PRE-PRIMARY</span></h3></a>
+            <div class="navigation">
+                <div class="nav-items">
+                    <div class="nav-close-btn"></div>
+                    <ul>
+                        <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                        <li><a href="#features" onclick="toggleMenu()">Features</a></li>
+                        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                        <li><a href="#teacher" onclick="toggleMenu()">Teachers</a></li>
+                        <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+                        <li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li>                        
+                        <li><a href="#contact" onclick="toggleMenu()">Sponsors</a></li>
+                        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
+            <div class="nav-menu-btn"></div>
+        </nav>
     </header>
 
     <!-- HOME -->
 
-    <section class="home">
-        <img class="image-slide active" src="images/classroom2.jpg" alt="">
-        <img class="image-slide" src="images/IMG-20240623-WA0005.jpg" alt="">
-        <img class="image-slide" src="images/IMG-20240624-WA0000.jpg" alt="">
-        <img class="image-slide" src="images/playground.jpg" alt="">
-        <img class="image-slide" src="images/play.jpg" alt="">
-        <div class="content active background2">
-            <h1 style="color: blue">Welcome to<br><span>KUSASELIHLE CRECHE AND PRE-SCHOOL</span></h1>
-            <h3>Strive For Wisdom Through Education</h3>
+    <section class="home background2" id="home">
+        <div class="content">
+            <h1>Welcome to <br><span>KUSASELIHLE CRECHE</span></h1>
             <div class="flex-center">
-                <a href="#about" class="btn" id="btn">Learn More</a>
+                <h3>Strive For Wisdom Through Education</h3>
             </div>
-        </div>
-        <div class="content flex-center">
-            <h1 class="first">Future Caring</h1>
-            <p></p>
-        </div>
-        <div class="content flex-center">
-            <h1 class="first">Beginnings</h1>
-            <p></p>
-        </div>
-        <div class="content flex-center">
-            <h1 class="first">Growing</h1> 
-            <p></p>
-        </div>
-        <div class="content flex-center">
-            <h1 class="first">Fun-Filled</h1>
-            <p></p>
-        </div>
-        <div class="slider-navigation">
-            <div class="nav-btn active"></div>
-            <div class="nav-btn"></div>
-            <div class="nav-btn"></div>
-            <div class="nav-btn"></div>
-            <div class="nav-btn"></div>
+            <div class="flex-center">
+                    <a href="#about" class="btn" id="btn">Learn More</a>
+            </div>
         </div>
     </section>
 
     <!-- FEATURES -->
 
     <section class="features" id="features">
-        <h3 class="heading"> Why Children Love Us</h3>
+        <h3 style="text-align: center; margin-bottom:2em;"> Why Children Love Us</h3>
         <div class="box-container">
             <div class="box">
                 <img src="images/informativee.png" alt="">
@@ -97,13 +74,13 @@
             </div>
         </div>
         
-        <h3 class="heading">Why Parents Choose Us</h3>
+        <h3 style="text-align: center; margin:2em 0;">Why Parents Choose Us</h3>
         <div class="box-container">
             <div class="box">
                 <img src="images/imaqges.png" alt="">
                 <div class="info">
                     <h3>Continuous Mentoring</h3>
-                    <p>Our Teachers and Staff receive continuous learning and development, in partnership with local stakeholders, to remain relevant and competitive in the industry.</p>
+                    <p>Our Teachers and Staff receive continuous learning and development, in partnership with local stakeholders, to remain relevant and competitve in the industry.</p>
                 </div>
             </div>
             <div class="box">
@@ -127,18 +104,20 @@
 
     <section class="about background" id="about">
         <div class="image">
-            <img src="images/regalia.jpg" alt="">
+            <img src="images/IMG-20240623-WA0003.jpg" alt="">
         </div>
         <div class="content">
             <h3>About Us</h3>
-            <p>We hold a strong belief that a child's growth and development into adulthood is moulded and grounded in the foundation phase. Children enter the public schooling system ill-prepared, un-assessed of their true abilities and potential and lacking in foundational grounding, that is provided by creches and pre-schools. In solving these social-educational ills, Kusaselihle was founded.</p>
-            <p class="founding">Our founding pillars include but are not limited to the following:</p>
-            <p class="list">To reduce child poverty in the rural community by ensuring that children receive at least two daily meals, in partnership with local stakeholders</p>
-            <p class="list">To assist young mothers be able to continue and further their education. </p>
-            <p class="list">To assist hardworking single parents achieve an important work-life balance</p>
-            <p class="list">To assess and prepare our children to be physically and psychologically fit for the public schooling system</p>
-            <div class="flex-center">
-                <a href="#contact" class="btn">Contact Us</a>
+            <div class="para">
+                <p class="list">We hold a strong belief that a child's growth and development into adulthood is moulded and grounded in the foundation phase. Children enter the public schooling system ill-prepared, un-assessed of their true abilities and potential and lacking in foundational grounding, that is provided by creches and pre-schools. In solving these social-educational ills, Kusaselihle was founded.</p>
+                <p class="founding">Our founding pillars include but are not limited to the following:
+                <p class="list">To reduce child poverty in the rural community by ensuring that children receive at least two daily meals, in partnership with local stakeholders</p>
+                <p class="list">To assist young mothers be able to continue and further their education. </p>
+                <p class="list">To assist hardworking single parents achieve an important work-life balance</p>
+                <p class="list">To assess and prepare our children to be physically and psychologically fit for the public schooling system</p>
+                <div class="flex-center">
+                    <a href="#contact" class="btn">Contact Us</a>
+                </div>
             </div>
         </div>
     </section>
@@ -154,7 +133,7 @@
 
     <section class="teacher" id="teacher">
 
-        <h1 class="heading">Our Amazing Teachers</h1>
+        <h2>Our Amazing Teachers</h2>
         
         <div class="box-container">
             <div class="box">
@@ -166,7 +145,7 @@
             </div>
             <div class="box">
                 <img src="images/lindi.png" alt="">
-                <h3>Miss Lindiwe Dube</h3>
+                <h3>Lindiwe Dube</h3>
                 <span>Head Teacher<br> 2 - 3 Year Olds</span>
                 <p>I like to spend my spare time reading books and socialising on social media. I hold qualifications in ECD with NQF level 4 and computer studies. I am registered in UNISA for Bachelor of Education in Accounting. I started teaching ECD in 2013, in Kusaselihle. My passion in teaching ECD came as an inspiration from my dear mother, who is also an ECD practitioner. I love children and I enjoy myself when i spend my time with them.</p>
             </div>
@@ -182,12 +161,6 @@
                 <span>ECD Practitioner<br> Pre-Grade</span>
                 <p>I enjoy being in the company of children and reading them stories and bible verses. I also like doing chores, when im at home. I love to impart to knowledge on chidren for their growth and well-being. I love teaching little children, it is something that was naturally instilled in me and very much a part of my being. I used to volunteer in eSakhisizwe creche and pre-school in 2008. In 2020 I started to teach in Kusaselihle. In 2023 I started to do a learnership with Feeders Babies Fund. It included areas, such as Orientation, Creche Management and Themes and now I am currently doing ECD NQF level 4.</p>
             </div>
-            <div class="box">
-                <img src="images/KHETHIWE.jpg" alt="">
-                <h3>Miss Khethiwe Patience Mlotshwa</h3>
-                <span>ECD Practitioner<br> 2-3 years</span>
-                <p>I love cooking, reading online novels and browsing socials. I have an inner passion for children, drive and dedication for their well-being. Since I started working at Kusaselihle, I have learned so much more about child-care and ECD daily organizational operations. Personally, I grew incredibly well and became a better and skilled child care-taker. In the next 5 years I aim to professionally grow and become a qualified ECD practitioner.</p>
-            </div>
         </div>
     </section>
 
@@ -195,7 +168,7 @@
 
     <section class="services background" id="services">
 
-        <h1 class="heading">What We Teach Your Children</h1>
+        <h3>What We Teach Your Children</h3>
 
         <div class="box-container">
             <div class="box">
@@ -248,7 +221,7 @@
 
     <section class="testimonials" id="testimonials">
     
-        <h1 class="heading">What the Community says</h1>
+        <h2>What the Community says</h2>
         
         <div class="box-container">
             <div class="box">
@@ -275,7 +248,7 @@
                         <h3>Claude Monareng</h3>
                     </div> 
                     <div class="info">
-                        <p>My name is Claude Monareng, im a member of Dicks Halt community, since i have been working with the creche for a while, I can say that they really care about children. The chidren are happy and engaged.</p>
+                        <p>My name is Claude Monareng, im a member of Newcastle community, since i have been working with the creche for a while, I can say that they really care about children. The chidren are happy and engaged.</p>
                         <p>- Wits Alumni and Former CEO and Co-Founder of Kewaa</p>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -284,7 +257,7 @@
                         <i class="fa fa-star-half-o"></i>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
     </section>
 
@@ -292,7 +265,7 @@
 
     <section class="sponsors section background" id="sponsors">
 
-        <h1 class="heading">Our Wonderful Sponsors</h1>
+        <h1 class="heading"> Our Wonderful Sponsors</h1>
         <p>Thanks for the continued support from our sponsors and partners. It it through their support that we are able to provide nutritious daily meals for healthy bodies and minds in rural areas. It is also through their support that we are able to provide quality basic education and care.
 
         <div class="box-container">
@@ -349,22 +322,14 @@
     <section class="contact" id="contact">
         <div class="row">
             <div class="contact-info">
-                <div class="box" id="contact-details-box">
-                    <h3 class="contact-heading">Contact Details</h3>
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>222333 Dicks Halt, Newcastle, KwaZulu-Natal, South Africa</p>
-                    <i class="fas fa-envelope"></i>
-                    <p>Head Teacher and Supervisor: Lindiwe Dube</p>
-                    <i class="fas fa-phone"></i>
-                    <p> 076 436 0973 </p>
+                <div class="box" id="contact-details">
+                    <h3>Contact Details</h3>
+                    <p> <i class="fas fa-map-marker-alt"></i>222333 Dicks Halt, Newcastle, KwaZulu-Natal, South Africa</p>
+                    <p> <i class="fas fa-envelope"></i>Head Teacher and Supervisor: Lindiwe Dube</p>
+                    <p> <i class="fas fa-phone"></i> 076 436 0973 </p>
                 </div>
-                <div class="box" id="follow-us-box">
-                    <h3 class="contact-heading">Follow Us</h3>
-                    <a href="https://web.facebook.com/profile.php?id=61563744384462" class="fab fa-facebook-f" id="faebook"></a>
-                    <a href="https://twitter/" class="fab fa-twitter" id="twitter"></a>
-                </div>
-                <div class="box" id="operating-times-box">
-                    <h3 class="contact-heading">Operating Times</h3>
+                <div class="box" id="operating-times">
+                    <h3>Operating Times</h3>
                     <p>Mondays to Fridays: 07:00 - 16:00</p>
                     <p>(After-care: 16:00 - 18:00)</p>
                     <p>Saturdays: Closed </p>
@@ -373,11 +338,19 @@
                 </div>
             </div>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d630.040375257021!2d30.15290463985594!3d-27.738235225153318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sza!4v1722515061228!5m2!1sen!2sza" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d630.040375257021!2d30.15290463985594!3d-27.738235225153318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sza!4v1722515061228!5m2!1sen!2sza" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
-    
-    <div class="footer background">
-        &#169 2024 <a href="https://claudemonareng.github.io/keyaa"><span>Kusaselihle Creche and Pre-School</span></a>
+
+        <div class="footer-copyright" style="margin-top: 8rem;">            
+            <!-- <div class="box" id="follow-us-details">
+                <h3 id="follow-us-heading">Follow Us</h3>
+                <a href="https://web.facebook/" class="fab fa-facebook-f" id="faebook"></a>
+                <a href="https://twitter/" class="fab fa-twitter" id="twitter"></a>
+            </div> -->
+            <p>&#169 2025 by Kusaselihle Creche and Pre-School. All Rights Reserved.</p>
+
+            <!-- <p style="font-size: 1.5rem;">Reg. No.: 2024/727172/07</p> -->
+        </div>
     </div>
 
     <script src="js/swiper-bundle.min.js"></script>
